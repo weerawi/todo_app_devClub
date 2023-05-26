@@ -14,43 +14,44 @@
     </head> 
 
     <body>
-        <header>
-            <h1>Task List  </h1>
+        <header class="p-8 w-9/12 max-w-xl m-14 border-solid bg-gray-100  rounded-xl  shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] ">
+            <h1 class="font-bold text-2xl">Task List  </h1>
                   
-            <form id="new-task-form">
-                <input type="text" placeholder="Enter new Task . . .">
-                <input type="submit" id="add-btn" value="Add Task">
+            <form class="flex items-stretch flex-col m-1" id="new-task-form">
+                <input class="mt-4 block w-9/12 flex  border-solid border-2 border-gray-500 rounded-xl" type="text" placeholder="Enter new Task . . ."> 
+                <button class="mt-4 block w-28 flex  border-solid border-2 border-gray-500 rounded-xl justify-center bg-pink-500 text-white
+                " type="submit" form="form " value="Submit">Submit</button>
 
             </form>
         </header>
 
-     <main>
+        <main>
 
-        <section class="task-list ">
+            <section class="task-list ">
 
-            <h2>Task</h2>
+                <h2>Task</h2>
 
-            <div id="task">
+                <div id="task">
 
-                <div class="task" >
-                    <div class="content">
-                        <input
-                            type="text"
-                            class="text"
-                            value="My shiny task"
-                            readonly/>
+                    <div class="task" >
+                        <div class="content">
+                            <input
+                                type="text"
+                                class="text"
+                                value="My shiny task"
+                                readonly/>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-        <div class="action">
-                 <button class="edit">Edit</button>
-                <button class="delete">Delete</button>
-        
-                
-            </div>
-        </section>
-     </main>
+            <div class="action">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+            
+                    
+                </div>
+            </section>
+        </main>
 
 
     </body>
