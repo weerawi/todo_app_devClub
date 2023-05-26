@@ -25,17 +25,17 @@
             </form>
         </header>
 
-        <main>
+        <main class="p-8 w-9/12 max-w-xl m-14 border-solid bg-gray-100  rounded-xl  shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] ">
 
-            <section class="task-list ">
+            <section class="flex items-stretch flex-col m-1 ">
 
-                <h2>Task</h2>
+                <h2 class="font-bold text-xl">Task</h2>
 
-                <div id="task">
+                <div class="flex mt-3  flex-col">
 
-                    <div class="task" >
-                        <div class="content">
-                            <input
+                    <div class=" " >
+                        <div class=" ">
+                            <input class="mt-4 block w-full flex  border-solid border-2 border-gray-500 rounded-xl"
                                 type="text"
                                 class="text"
                                 value="My shiny task"
@@ -43,15 +43,19 @@
 
                         </div>
                     </div>
+                    <div class=" flex flex-row mt-3">
+                        <button class="m-2  block w-28 flex   flex-row  border-solid border-2 border-gray-500 rounded-xl justify-center bg-green-500 text-white
+                        " class="edit">Edit</button>
+                        <button class=" m-2 block w-28 flex   flex-row  border-solid border-2 border-gray-500 rounded-xl justify-center bg-red-500 text-white
+                        " class="delete">Delete</button>
+                
+                        
+                    </div>
                 </div>
-            <div class="action">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
-            
-                    
-                </div>
+                
             </section>
         </main>
 
+        <script src="main.js" ></script>
 
     </body>
